@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Cadastro de Corretores</title>
+</head>
+<body>
+    <h1>Cadastro de Corretores</h1>
+    <form id="formCadCorr" action="/corretores/cadastro/salvar" method="POST">
+        <label>Nome: </label>
+        <input type="text" name="nome" placeholder="Digite o nome do corretor"><br/>
+        <br/>
+        <label>CPF: </label>
+        <input type="text" name="cpf" placeholder="Digite o CPF"><br/>
+        <br/>
+        <label>Sexo: </label>
+        <select name="sexo">
+            <option selected>Selecione uma opção...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br/>
+        <br/>
+        <label>Telefone: </label>
+        <input type="text" name="telefone" placeholder="Digite o telefone"><br/>
+        <br/>
+        <label>E-mail: </label>
+        <input type="text" name="email" placeholder="Digite o e-mail"><br/>
+        <br/>
+        <label>CRECI: </label>
+        <input type="text" name="creci" placeholder="Digite o CRECI"><br/>
+        <br/>
+        <button type="submit">Salvar</button>
+    </form>
+    <!-- Conteúdo -->
+</body>
+</html>

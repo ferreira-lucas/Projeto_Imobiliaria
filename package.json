@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14",
+    "sequelize": "^6.8.0"
+  },
+  "name": "projeto_imobiliaria",
+  "description": "Projeto de desenvolvimento Web para faculdade de Ciência da Computação",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferreira-lucas/Projeto_Imobiliaria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferreira-lucas/Projeto_Imobiliaria/issues"
+  },
+  "homepage": "https://github.com/ferreira-lucas/Projeto_Imobiliaria#readme"
+}
