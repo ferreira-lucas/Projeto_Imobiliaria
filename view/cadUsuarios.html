@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <form id="formCadUser" action="/usuarios/cadastro/salvar" method="POST">
+        <label>E-mail: </label>
+        <input type="text" name="email" placeholder="Digite seu e-mail"><br/>
+        <br/>
+        <label>Senha: </label>
+        <input type="text" name="senha" placeholder="Digite sua senha"><br/>
+        <br/>
+        <label>Tipo: </label>
+        <select name="tipo">
+            <option selected>Selecione uma opção...</option>
+            <option value="Corretor">Corretor</option>
+            <option value="Cliente">Cliente</option>
+        </select><br/>
+        <br/>
+        <button type="submit">Salvar</button>
+    </form>
+    <!-- Conteúdo -->
+</body>
+</html>

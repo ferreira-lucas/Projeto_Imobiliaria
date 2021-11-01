@@ -1,4 +1,4 @@
-const conexao = require('../connection/ConexaoBanco')
+const conexao = require('../connection/conexaoBanco')
 const manipCorretores = {
     insertCorretores: async function (corretor){//INSERE CORRETORES NO DB
         const conn = await conexao.connect()
@@ -29,11 +29,10 @@ const manipCorretores = {
     
     selectByIdCorretores: async function (idCorr){
         const conn = await conexao.connect()
-        const sql = 'SELECT FROM corretores WHERE idCorr=?;'
+        const sql = 'SELECT * FROM corretores WHERE idCorr=?;'
         const [rows] = await conn.query(sql, idCorr)
         return await rows
     }
 }
-
 
 module.exports = {manipCorretores}

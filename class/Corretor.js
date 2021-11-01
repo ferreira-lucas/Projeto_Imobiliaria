@@ -1,11 +1,10 @@
 const Pessoa = require('./Pessoa.js')
 
 class Corretores extends Pessoa.Pessoa{
-    constructor(idCorr, nome, cpf, sexo, telefone, email, creci, sitCadastro, senha){
-        super(nome, cpf, sexo, telefone, email, sitCadastro, senha)
+    constructor(idCorr, nome, cpf, sexo, telefone, email, creci, sitCadastro, idUser){
+        super(nome, cpf, sexo, telefone, email, sitCadastro, idUser)
         this._idCorr = idCorr
         this._creci = creci
-        this._sitCadastro = sitCadastro
     }
 
     set idCorr(idCorr){
@@ -72,16 +71,13 @@ class Corretores extends Pessoa.Pessoa{
         return this._sitCadastro
     }
 
-    set senha(senha){
-        this._senha = senha
+    set idUser(idUser){
+        this._idUser = idUser
     }
 
-    get senha(){
-        return this._senha
+    get idUser(){
+        return this._idUser
     }
 }
 
-const corr = new Corretores()
-corr.nome = 'Lucas Ferreira'
-corr.creci = '1234abcd'
-console.log(corr)
+module.exports = Corretores

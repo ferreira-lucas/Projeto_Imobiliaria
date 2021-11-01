@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <form id="formCadCli" action="/clientes/cadastro/salvar" method="POST">
+        <label>Nome: </label>
+        <input type="text" name="nome"><br/>
+        <br/>
+        <label>CPF: </label>
+        <input type="text" name="cpf"><br/>
+        <br/>
+        <label>Sexo: </label>
+        <select name="sexo">
+            <option selected>Selecione uma opção...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br/>
+        <br/>
+        <label>Endereço: </label>
+        <input type="text" name="endereco"><br/>
+        <br/>
+        <label>Número: </label>
+        <input type="text" name="numero"><br/>
+        <br/>
+        <label>Bairro: </label>
+        <input type="text" name="bairro"><br/>
+        <br/>
+        <label>Cidade: </label>
+        <input type="text" name="cidade"><br/>
+        <br/>
+        <label>País: </label>
+        <input type="text" name="pais"><br/>
+        <br/>
+        <label>CEP: </label>
+        <input type="text" name="cep"><br/>
+        <br/>
+        <label>Telefone: </label>
+        <input type="text" name="telefone"><br/>
+        <br/>
+        <label>E-mail: </label>
+        <input type="text" name="email"><br/>
+        <br/>
+        <label>Tipo de cliente: </label>
+        <select name="tipo">
+            <option selected>Selecione uma opção...</option>
+            <option value="V">Visitante</option>
+            <option value="P">Proprietário</option>
+        </select><br/>
+        <br/>
+        <label>Usuário: </label>
+        <input type="text" name="idUser"><br/>
+        <br/>
+        <button type="submit">Salvar</button>
+    </form>
+    <!-- Conteúdo -->
+</body>
+</html>
