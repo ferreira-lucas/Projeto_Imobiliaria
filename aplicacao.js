@@ -1,15 +1,20 @@
+//Definição das variáveis e importações
 const express = require('express')
 const sessions = require('express-session')
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser')
 const app = express()
 
-const bodyParser = require('body-parser')
+//Configuração body-parser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+//Configuração express
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(__dirname))
+
+//Configuração cookie-parser e express-session
 app.use(cookieParser())
 const oneDay = 1000 * 60 * 60 * 24;
 app.use(sessions({
@@ -22,6 +27,7 @@ app.use(sessions({
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
 
+//Rotas
 const rotaIndex = require('./rotas/rotaIndex')
 const rotaLogin = require('./rotas/rotaLogin')
 const rotaDashboard = require('./rotas/rotaDashboard')

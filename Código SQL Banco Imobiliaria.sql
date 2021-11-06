@@ -65,7 +65,7 @@ CREATE TABLE Usuarios (
     nome varchar (200) NOT NULL,
     email varchar (200) NOT NULL,
     senha varchar (20) NOT NULL,
-    tipo enum ('Corretor', 'Cliente') NOT NULL,
+    tipo enum ('Corretor', 'Cliente', 'Admin') NOT NULL,
     sitCadastro enum ('A', 'E') NOT NULL
 );
  

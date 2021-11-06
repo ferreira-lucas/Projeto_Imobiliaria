@@ -4,7 +4,7 @@ const dao = require('../dao/ClientesDAO.js')
 const cliente = require('../class/Cliente.js')
 
 rota.get('/', (req, res, next) => {
-    res.render('../view/cadClientes.html')
+    res.render('../views/cadClientes.html')
     /*var nome = document.getElementsByName("nome")
     nome.readOnly = true*/
 })

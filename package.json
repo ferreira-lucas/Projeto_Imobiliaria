@@ -7,8 +7,7 @@
     "express-session": "^1.17.2",
     "lodash": "^4.17.21",
     "mysql2": "^2.3.2",
-    "nodemon": "^2.0.14",
-    "sequelize": "^6.8.0"
+    "nodemon": "^2.0.14"
   },
   "name": "projeto_imobiliaria",
   "description": "Projeto de desenvolvimento Web para faculdade de Ciência da Computação",

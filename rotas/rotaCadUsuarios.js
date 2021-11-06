@@ -4,7 +4,7 @@ const dao = require('../dao/UsuariosDAO.js')
 const usuario = require('../class/Usuario.js')
 
 rota.get('/', (req, res, next) => {
-    res.render('../view/cadUsuarios.html')
+    res.render('../views/cadUsuarios.html')
 })
 
 rota.post('/salvar', (req, res, next) => {

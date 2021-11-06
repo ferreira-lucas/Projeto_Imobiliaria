@@ -4,7 +4,7 @@ const dao = require('../dao/CorretoresDAO.js')
 const corretor = require('../class/Corretor.js')
 
 rota.get('/', (req, res, next) => {
-    res.render('../view/cadCorretores.html')
+    res.render('../views/cadCorretores.html')
 })
 
 rota.post('/salvar', (req, res, next) => {

@@ -4,7 +4,7 @@ const dao = require('../dao/ImoveisDAO.js')
 const imovel = require('../class/Imovel.js')
 
 rota.get('/', (req, res, next) => {
-    res.render('../view/cadImoveis.html')
+    res.render('../views/cadImoveis.html')
 })
 
 rota.post('/salvar', (req, res, next) => {
